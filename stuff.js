@@ -1,4 +1,13 @@
-window.alert('hello');
+function update(a){
+  var node= document.createElement("p");
+  var value=a;
+  var textnode= document.createTextNode(value);
+  node.appendChild(textnode);
+  document.getElementById('output').appendChild(node);
+
+}
+update('inside');
+document.getElementById('p1id').innerHTML=document.getElementById('p1id')."begin js";
 window.const div = document.createElement('div');
 window.div.appendChild(capture);
 
@@ -9,7 +18,7 @@ window.const stream = await navigator.mediaDevices.getUserMedia({video: true});
 
 document.body.appendChild(div);
 window.div.appendChild(video);
-window.alert('appended child video');
+update('appended  child video');
 window.video.srcObject = stream;
 await video.play();
 //function() {
@@ -35,6 +44,7 @@ await video.play();
 
   function startup() {
     window.alert("INSIDE STARTUP()");
+    update('inside startup');
     video = document.getElementById('video');
     canvas = document.getElementById('canvas');
     photo = document.getElementById('photo');
