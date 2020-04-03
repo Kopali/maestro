@@ -1,5 +1,5 @@
 window.alert('hello');
-/*window.const div = document.createElement('div');
+window.const div = document.createElement('div');
 window.div.appendChild(capture);
 
 window.const video = document.createElement('video');
@@ -10,7 +10,7 @@ window.const stream = await navigator.mediaDevices.getUserMedia({video: true});
 document.body.appendChild(div);
 window.div.appendChild(video);
 window.video.srcObject = stream;
-await video.play();*/
+await video.play();
 //function() {
   // The width and height of the captured photo. We will set the
   // width to the value defined here, but the height will be
