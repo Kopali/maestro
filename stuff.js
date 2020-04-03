@@ -9,6 +9,7 @@ window.const stream = await navigator.mediaDevices.getUserMedia({video: true});
 
 document.body.appendChild(div);
 window.div.appendChild(video);
+window.alert('appended child video');
 window.video.srcObject = stream;
 await video.play();
 //function() {
